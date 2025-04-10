@@ -1,0 +1,46 @@
+[
+  {
+    "name": "React",
+    "query": "react OR 'react native' OR next.js OR nextJs OR reactJS OR react.js",
+    "location": {
+      "remote": true,
+      "hybrid": true,
+      "onSite": false
+    },
+    "dach": true
+  },
+  {
+    "name": "Node.js",
+    "query": "node OR nodejs OR node.js",
+    "location": {
+      "remote": true,
+      "hybrid": true,
+      "onSite": false
+    },
+    "dach": true
+  },
+  {
+    "name": ".NET",
+    "query": ".net OR c# OR 'c sharp'",
+    "location": {
+      "remote": true,
+      "hybrid": true,
+      "onSite": false
+    },
+    "dach": true
+  },
+  {
+    "name": "Wien",
+    "query": "",
+    "location": {
+      "remote": true,
+      "hybrid": true,
+      "onSite": true
+    },
+    "dach": true,
+    "city": {
+      "name": "Wien",
+      "radius": "50"
+    }
+  }
+]
