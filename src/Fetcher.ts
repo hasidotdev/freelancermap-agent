@@ -10,7 +10,7 @@ export class Fetcher {
 
   private mostRecentProjectTimestamp?: number
 
-  private readonly name: string
+  public readonly name: string
 
   private readonly params = {
     projectContractTypes: ["contracting", "employee_leasing"],

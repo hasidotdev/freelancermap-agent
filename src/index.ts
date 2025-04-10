@@ -22,6 +22,6 @@ notifier.testMail().then(() => {
 for (const fetcher of fetchers) {
   fetcher.run((projects) => {
     console.log(`Found ${projects.length} projects`)
-    notifier.notify(projects)
+    notifier.notify(projects, fetcher.name)
   })
 }

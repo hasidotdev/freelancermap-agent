@@ -41,7 +41,7 @@ export class Notifier {
     console.log("Notifier: Mail transporter configured using OAuth2.")
   }
 
-  public async notify(projects: Project[]): Promise<void> {
+  public async notify(projects: Project[], fetcherName: string): Promise<void> {
     if (projects.length === 0) {
       console.log("Notifier: No new projects to notify about.")
       return
@@ -49,7 +49,7 @@ export class Notifier {
 
     console.log(`Notifier: Received ${projects.length} new projects. Preparing email...`)
 
-    const subject = `Freelancermap: ${projects.length} New Project(s) Found!`
+    const subject = `Freelancermap: ${fetcherName} - ${projects.length} New Project(s) Found!`
     const projectListHtml = projects
       .map(
         (project) => `
