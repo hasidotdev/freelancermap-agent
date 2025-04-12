@@ -6,7 +6,7 @@ import { FreelancerMapResponse, Project } from "./types" // Import interfaces
 export class Fetcher {
   private readonly url = "https://www.freelancermap.at/project/search/ajax"
 
-  private readonly interval = 1000 * 60 * 5 // 5 minutes
+  private readonly interval = 1000 * 60 * 2 // 1 minute
 
   private mostRecentProjectTimestamp?: number
 
@@ -81,8 +81,21 @@ export class Fetcher {
       return []
     }
 
+    console.log(`Fetcher ${this.name}: `, "Most recent project timestamp:", this.mostRecentProjectTimestamp)
+    console.log(
+      `Fetcher ${this.name}: `,
+      "Projects:",
+      projects.map((p) => p.updated)
+    )
     const newProjects = projects.filter((project) => project.updated > this.mostRecentProjectTimestamp!)
-    this.mostRecentProjectTimestamp = projects[0]?.updated
+
+    console.log(
+      `Fetcher ${this.name}: `,
+      "New projects:",
+      newProjects.map((p) => p.updated)
+    )
+
+    this.mostRecentProjectTimestamp = newProjects[0]?.updated
 
     console.log(`Found ${newProjects.length} new projects.`)
     return newProjects

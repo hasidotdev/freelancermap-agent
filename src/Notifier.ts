@@ -69,7 +69,7 @@ export class Notifier {
       .join("")
 
     const htmlBody = `
-      <h1>New Freelancermap Projects Found</h1>
+      <h1>New Freelancermap Projects Found in search ${fetcherName}</h1>
       <p>Found ${projects.length} new project(s) matching your criteria:</p>
       <ul>
         ${projectListHtml}

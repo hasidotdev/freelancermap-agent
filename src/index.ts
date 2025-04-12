@@ -15,9 +15,9 @@ try {
 
 const notifier = new Notifier()
 
-notifier.testMail().then(() => {
-  console.log("Test email sent successfully!")
-})
+// notifier.testMail().then(() => {
+//   console.log("Test email sent successfully!")
+// })
 
 for (const fetcher of fetchers) {
   fetcher.run((projects) => {
