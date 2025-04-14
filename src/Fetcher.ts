@@ -69,8 +69,16 @@ export class Fetcher {
   }
 
   private updateMostRecentProjectTimestamp(projects: Project[]): void {
-    this.mostRecentProjectTimestamp = projects[0]?.updated
-    console.log(`Fetcher ${this.name}: `, "Most recent project timestamp updated to:", new Date(this.mostRecentProjectTimestamp! * 1000).toISOString())
+    try {
+      this.mostRecentProjectTimestamp = projects.sort((a, b) => b.updated - a.updated)[0]?.updated
+      if (this.mostRecentProjectTimestamp) {
+        console.log(`Fetcher ${this.name}: `, "Most recent project timestamp updated to:", new Date(this.mostRecentProjectTimestamp * 1000).toISOString())
+      } else {
+        console.log(`Fetcher ${this.name}: `, "No projects found. Most recent project timestamp not updated.")
+      }
+    } catch (error) {
+      console.error("Error updating most recent project timestamp:", error)
+    }
   }
 
   private processProjects(projects: Project[]): Project[] {
@@ -82,20 +90,10 @@ export class Fetcher {
     }
 
     console.log(`Fetcher ${this.name}: `, "Most recent project timestamp:", this.mostRecentProjectTimestamp)
-    console.log(
-      `Fetcher ${this.name}: `,
-      "Projects:",
-      projects.map((p) => p.updated)
-    )
+
     const newProjects = projects.filter((project) => project.updated > this.mostRecentProjectTimestamp!)
 
-    console.log(
-      `Fetcher ${this.name}: `,
-      "New projects:",
-      newProjects.map((p) => p.updated)
-    )
-
-    this.mostRecentProjectTimestamp = newProjects[0]?.updated
+    this.updateMostRecentProjectTimestamp(newProjects)
 
     console.log(`Found ${newProjects.length} new projects.`)
     return newProjects

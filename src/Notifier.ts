@@ -43,11 +43,11 @@ export class Notifier {
 
   public async notify(projects: Project[], fetcherName: string): Promise<void> {
     if (projects.length === 0) {
-      console.log("Notifier: No new projects to notify about.")
+      console.log(`Notifier: ${fetcherName}: No new projects to notify about.`)
       return
     }
 
-    console.log(`Notifier: Received ${projects.length} new projects. Preparing email...`)
+    console.log(`Notifier: ${fetcherName}: Received ${projects.length} new projects. Preparing email...`)
 
     const subject = `Freelancermap: ${fetcherName} - ${projects.length} New Project(s) Found!`
     const projectListHtml = projects
@@ -84,12 +84,12 @@ export class Notifier {
     }
 
     try {
-      console.log("Notifier: Sending email via OAuth2...")
+      console.log(`Notifier: ${fetcherName}: Sending email via OAuth2...`)
       // Nodemailer will automatically handle fetching/refreshing the access token
       const info = await this.transporter.sendMail(mailOptions)
-      console.log("Notifier: Email sent successfully! Message ID:", info.messageId)
+      console.log(`Notifier: ${fetcherName}: Email sent successfully! Message ID:`, info.messageId)
     } catch (error) {
-      console.error("Notifier: Error sending email:", error)
+      console.error(`Notifier: ${fetcherName}: Error sending email:`, error)
       // Depending on requirements, you might want to implement retries or other error handling
     }
   }
