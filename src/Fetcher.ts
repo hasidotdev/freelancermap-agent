@@ -163,8 +163,8 @@ export class Fetcher {
         console.error("Error Message:", error.message)
       }
       console.error("Config:", error.config)
+      return []
     }
-    throw new Error("Error fetching data")
   }
 
   public async run(onNewProjects: (projects: Project[]) => void): Promise<void> {
