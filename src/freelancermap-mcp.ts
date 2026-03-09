@@ -155,7 +155,7 @@ async function main() {
     "get_project_detail",
     "Fetch full details for a single freelancermap.at project by its numeric ID.",
     {
-      project_id: z.number().int().describe("The numeric project ID"),
+      project_id: z.union([z.number().int(), z.string().regex(/^\d+$/).transform(Number)]).describe("The numeric project ID"),
     },
     async ({ project_id }) => {
       const detail = await Fetcher.getProjectDetail(project_id)
