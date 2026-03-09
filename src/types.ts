@@ -116,7 +116,7 @@ export interface Project {
   image: Image
   translations: any[] // Type based on actual data if available
   memoListStatus: any | null // Type based on actual data if available
-  skills: Skill[]
+  skills: Skill[] | { enabled: Skill[]; disabled: Skill[] }
 }
 
 export interface ProjectDetail {

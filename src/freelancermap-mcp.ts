@@ -75,7 +75,10 @@ function formatProjects(projects: Project[], queryString: string, excludedCount:
   ]
 
   for (const p of projects) {
-    const skills = p.skills?.map(s => s.en || s.de).filter(Boolean).join(", ") || "—"
+    const skillList = Array.isArray(p.skills)
+      ? p.skills
+      : (p.skills as any)?.enabled ?? []
+    const skills = skillList.map((s: any) => s.en || s.nameEn || s.de || s.nameDe).filter(Boolean).join(", ") || "—"
     const remotePercent = p.projectContractType?.remoteInPercent ?? "?"
     const description = (p.description ?? "").slice(0, 100)
     const descSuffix = (p.description ?? "").length > 100 ? "..." : ""
