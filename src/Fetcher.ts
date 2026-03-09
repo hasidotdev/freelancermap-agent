@@ -6,7 +6,7 @@ import { FreelancerMapResponse, Project } from "./types" // Import interfaces
 export class Fetcher {
   private readonly url = "https://www.freelancermap.at/project/search/ajax"
 
-  private readonly interval = 1000 * 60 * 2 // 1 minute
+  private readonly interval = 1000 * 60 * 10 // 10 minutes
 
   private mostRecentProjectTimestamp?: number
 
@@ -135,7 +135,9 @@ export class Fetcher {
     try {
       const { urlWithParams, config, data } = this.prepareData<FreelancerMapResponse>()
 
-      console.log(`Fetcher ${this.name}: `, "Fetching data from:", urlWithParams)
+      const currentTime = new Date().toISOString()
+
+      console.log(`Fetcher ${this.name}: ${currentTime} - Fetching data from:`, urlWithParams)
       const response = await axios.post<FreelancerMapResponse>(urlWithParams, data, config)
 
       console.log(`Fetcher ${this.name}: `, "Response Status:", response.status)
