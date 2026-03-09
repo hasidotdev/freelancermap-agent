@@ -1,7 +1,7 @@
 import axios from "axios"
 import type { AxiosRequestConfig } from "axios"
 import { URLSearchParams } from "url"
-import { FreelancerMapResponse, Project } from "./types" // Import interfaces
+import { FreelancerMapResponse, Project, ProjectDetail } from "./types" // Import interfaces
 
 export class Fetcher {
   private readonly url = "https://www.freelancermap.at/project/search/ajax"
@@ -167,6 +167,24 @@ export class Fetcher {
       console.error("Config:", error.config)
       return []
     }
+  }
+
+  public static async getProjectDetail(id: number): Promise<ProjectDetail> {
+    const url = `https://www.freelancermap.at/api/projects/${id}/detailed`
+    const headers = {
+      accept: "*/*",
+      "accept-language": "en-US,en;q=0.9,de-DE;q=0.8,de;q=0.7",
+      "cache-control": "no-cache",
+      "content-type": "application/json",
+      dnt: "1",
+      origin: "https://www.freelancermap.at",
+      pragma: "no-cache",
+      priority: "u=1, i",
+      referer: "https://www.freelancermap.at/projektboerse.html",
+      "x-requested-with": "XMLHttpRequest",
+    }
+    const response = await axios.get<ProjectDetail>(url, { headers })
+    return response.data
   }
 
   public async run(onNewProjects: (projects: Project[]) => void): Promise<void> {

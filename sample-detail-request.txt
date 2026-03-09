@@ -1,0 +1,18 @@
+curl 'https://www.freelancermap.at/api/projects/2976702/detailed' \
+  -H 'accept: */*' \
+  -H 'accept-language: en-US,en;q=0.9,de-DE;q=0.8,de;q=0.7' \
+  -H 'cache-control: no-cache' \
+  -H 'content-type: application/json' \
+  -b 'OptanonAlertBoxClosed=2026-01-12T14:49:50.642Z; REMEMBERME=Entity.User%3ASGFzaXRzY2hrYQ~~%3A1773689886%3Arwf7qy9IJa1sgLmFDdEK-7e0dzgaf_hwiYPfuRnvfwU~5hlNW-UaX1gJypgLsmhGlQ-ZL2VY8jiMKADQZ-HkVF4~; PHPSESSID=a8162tb5n4fcavfffnr5a52p9j; OptanonConsent=isGpcEnabled=0&datestamp=Mon+Mar+09+2026+20%3A38%3A11+GMT%2B0100+(Mitteleurop%C3%A4ische+Normalzeit)&version=202508.1.0&browserGpcFlag=0&isIABGlobal=false&hosts=&consentId=acbc0128-fab2-4a61-b152-d8ee3ba721cf&interactionCount=1&isAnonUser=1&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&intType=1&geolocation=AT%3B9&AwaitingReconsent=false' \
+  -H 'dnt: 1' \
+  -H 'pragma: no-cache' \
+  -H 'priority: u=1, i' \
+  -H 'referer: https://www.freelancermap.at/projektboerse.html?countries%5B%5D=2&sort=1&pagenr=1&id=2976702' \
+  -H 'sec-ch-ua: "Not:A-Brand";v="99", "Google Chrome";v="145", "Chromium";v="145"' \
+  -H 'sec-ch-ua-mobile: ?0' \
+  -H 'sec-ch-ua-platform: "macOS"' \
+  -H 'sec-fetch-dest: empty' \
+  -H 'sec-fetch-mode: cors' \
+  -H 'sec-fetch-site: same-origin' \
+  -H 'user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36' \
+  -H 'x-requested-with: XMLHttpRequest'

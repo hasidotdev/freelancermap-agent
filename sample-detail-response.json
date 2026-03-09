@@ -1,0 +1,336 @@
+{
+  "@context": {
+    "@vocab": "https:\/\/www.freelancermap.at\/api\/docs.jsonld#",
+    "hydra": "http:\/\/www.w3.org\/ns\/hydra\/core#",
+    "firstName": "ProjectOutput\/firstName",
+    "lastName": "ProjectOutput\/lastName",
+    "company": "ProjectOutput\/company",
+    "country": "ProjectOutput\/country",
+    "city": "ProjectOutput\/city",
+    "contractType": "ProjectOutput\/contractType",
+    "startYear": "ProjectOutput\/startYear",
+    "startMonth": "ProjectOutput\/startMonth",
+    "startText": "ProjectOutput\/startText",
+    "durationInMonths": "ProjectOutput\/durationInMonths",
+    "durationText": "ProjectOutput\/durationText",
+    "extensionPossible": "ProjectOutput\/extensionPossible",
+    "workload": "ProjectOutput\/workload",
+    "industry": "ProjectOutput\/industry",
+    "skills": "ProjectOutput\/skills",
+    "expires": "ProjectOutput\/expires",
+    "disabled": "ProjectOutput\/disabled",
+    "budget": "ProjectOutput\/budget",
+    "importer": "ProjectOutput\/importer",
+    "locations": "ProjectOutput\/locations",
+    "updateCount": "ProjectOutput\/updateCount",
+    "isEndcustomerProject": "ProjectOutput\/isEndcustomerProject",
+    "isArchived": "ProjectOutput\/isArchived",
+    "applicationsPaused": "ProjectOutput\/applicationsPaused",
+    "customForm": "ProjectOutput\/customForm",
+    "companyUrl": "ProjectOutput\/companyUrl",
+    "id": "ProjectOutput\/id",
+    "title": "ProjectOutput\/title",
+    "slug": "ProjectOutput\/slug",
+    "created": "ProjectOutput\/created",
+    "updated": "ProjectOutput\/updated",
+    "poster": "ProjectOutput\/poster",
+    "isTopProject": "ProjectOutput\/isTopProject",
+    "active": "ProjectOutput\/active",
+    "topProjectExpires": "ProjectOutput\/topProjectExpires",
+    "description": "ProjectOutput\/description",
+    "displayDescription": "ProjectOutput\/displayDescription",
+    "projectUrl": "ProjectOutput\/projectUrl"
+  },
+  "@type": "Project",
+  "@id": "\/api\/projects\/2976702",
+  "firstName": "Nicholas ",
+  "lastName": "Galatis",
+  "company": "Optimus Search GmbH",
+  "country": {
+    "@context": {
+      "@vocab": "https:\/\/www.freelancermap.at\/api\/docs.jsonld#",
+      "hydra": "http:\/\/www.w3.org\/ns\/hydra\/core#",
+      "country": "CountryOutput\/country",
+      "id": "CountryOutput\/id",
+      "iso2": "CountryOutput\/iso2",
+      "nameDe": "CountryOutput\/nameDe",
+      "nameEn": "CountryOutput\/nameEn",
+      "localizedName": "CountryOutput\/localizedName"
+    },
+    "@type": "CountryOutput",
+    "@id": "\/api\/.well-known\/genid\/cd4b9e88d578aa62335c",
+    "country": "\/api\/countries\/2",
+    "id": 2,
+    "iso2": "AT",
+    "nameDe": "Österreich",
+    "nameEn": "Austria",
+    "localizedName": "Österreich"
+  },
+  "city": "Wien ",
+  "contractType": {
+    "@context": {
+      "@vocab": "https:\/\/www.freelancermap.at\/api\/docs.jsonld#",
+      "hydra": "http:\/\/www.w3.org\/ns\/hydra\/core#",
+      "contractType": "ContractTypeOutput\/contractType",
+      "remoteInPercent": "ContractTypeOutput\/remoteInPercent"
+    },
+    "@type": "ContractTypeOutput",
+    "@id": "\/api\/.well-known\/genid\/b694fe0fb87656412f57",
+    "contractType": "contracting",
+    "remoteInPercent": 60
+  },
+  "startYear": 2026,
+  "startMonth": 4,
+  "startText": null,
+  "durationInMonths": 12,
+  "durationText": null,
+  "extensionPossible": true,
+  "workload": 100,
+  "industry": {
+    "@context": {
+      "@vocab": "https:\/\/www.freelancermap.at\/api\/docs.jsonld#",
+      "hydra": "http:\/\/www.w3.org\/ns\/hydra\/core#",
+      "industry": "IndustryOutput\/industry",
+      "nameDe": "IndustryOutput\/nameDe",
+      "nameEn": "IndustryOutput\/nameEn"
+    },
+    "@type": "IndustryOutput",
+    "@id": "\/api\/.well-known\/genid\/38eeb8e7d26e466da930",
+    "industry": "\/api\/industries\/24",
+    "nameDe": "IT",
+    "nameEn": "IT"
+  },
+  "skills": {
+    "@context": {
+      "@vocab": "https:\/\/www.freelancermap.at\/api\/docs.jsonld#",
+      "hydra": "http:\/\/www.w3.org\/ns\/hydra\/core#",
+      "enabled": "SkillsOutput\/enabled",
+      "disabled": "SkillsOutput\/disabled"
+    },
+    "@type": "SkillsOutput",
+    "@id": "\/api\/.well-known\/genid\/750f3c9afea58395c7ad",
+    "enabled": [
+      {
+        "@context": {
+          "@vocab": "https:\/\/www.freelancermap.at\/api\/docs.jsonld#",
+          "hydra": "http:\/\/www.w3.org\/ns\/hydra\/core#",
+          "codeId": "SkillOutput\/codeId",
+          "nameDe": "SkillOutput\/nameDe",
+          "nameEn": "SkillOutput\/nameEn",
+          "localizedName": "SkillOutput\/localizedName",
+          "skill": "SkillOutput\/skill"
+        },
+        "@type": "SkillOutput",
+        "@id": "\/api\/.well-known\/genid\/21a054f4c8b4d7c02cfe",
+        "codeId": "KS1227D60Q7225FTK55V",
+        "nameDe": "Informationssysteme",
+        "nameEn": "Information Systems",
+        "localizedName": "Informationssysteme",
+        "skill": "\/api\/skills\/KS1227D60Q7225FTK55V"
+      },
+      {
+        "@context": {
+          "@vocab": "https:\/\/www.freelancermap.at\/api\/docs.jsonld#",
+          "hydra": "http:\/\/www.w3.org\/ns\/hydra\/core#",
+          "codeId": "SkillOutput\/codeId",
+          "nameDe": "SkillOutput\/nameDe",
+          "nameEn": "SkillOutput\/nameEn",
+          "localizedName": "SkillOutput\/localizedName",
+          "skill": "SkillOutput\/skill"
+        },
+        "@type": "SkillOutput",
+        "@id": "\/api\/.well-known\/genid\/0f18d5d0b2c562a52bc0",
+        "codeId": "KS1281Z6YSCYDNCG1D8T",
+        "nameDe": "Prozessdesign",
+        "nameEn": "Process Design",
+        "localizedName": "Prozessdesign",
+        "skill": "\/api\/skills\/KS1281Z6YSCYDNCG1D8T"
+      },
+      {
+        "@context": {
+          "@vocab": "https:\/\/www.freelancermap.at\/api\/docs.jsonld#",
+          "hydra": "http:\/\/www.w3.org\/ns\/hydra\/core#",
+          "codeId": "SkillOutput\/codeId",
+          "nameDe": "SkillOutput\/nameDe",
+          "nameEn": "SkillOutput\/nameEn",
+          "localizedName": "SkillOutput\/localizedName",
+          "skill": "SkillOutput\/skill"
+        },
+        "@type": "SkillOutput",
+        "@id": "\/api\/.well-known\/genid\/9a64494cdc1a20dfd3d2",
+        "codeId": "KS3U7HVJQA23HCCSSAC2",
+        "nameDe": "Schreiben von Dokumentation",
+        "nameEn": "Writing Documentation",
+        "localizedName": "Schreiben von Dokumentation",
+        "skill": "\/api\/skills\/KS3U7HVJQA23HCCSSAC2"
+      },
+      {
+        "@context": {
+          "@vocab": "https:\/\/www.freelancermap.at\/api\/docs.jsonld#",
+          "hydra": "http:\/\/www.w3.org\/ns\/hydra\/core#",
+          "codeId": "SkillOutput\/codeId",
+          "nameDe": "SkillOutput\/nameDe",
+          "nameEn": "SkillOutput\/nameEn",
+          "localizedName": "SkillOutput\/localizedName",
+          "skill": "SkillOutput\/skill"
+        },
+        "@type": "SkillOutput",
+        "@id": "\/api\/.well-known\/genid\/0b8bac8a92475e41fefd",
+        "codeId": "KS4400V6459G7LYV1X6V",
+        "nameDe": "Anforderungsanalyse",
+        "nameEn": "Requirements Analysis",
+        "localizedName": "Anforderungsanalyse",
+        "skill": "\/api\/skills\/KS4400V6459G7LYV1X6V"
+      },
+      {
+        "@context": {
+          "@vocab": "https:\/\/www.freelancermap.at\/api\/docs.jsonld#",
+          "hydra": "http:\/\/www.w3.org\/ns\/hydra\/core#",
+          "codeId": "SkillOutput\/codeId",
+          "nameDe": "SkillOutput\/nameDe",
+          "nameEn": "SkillOutput\/nameEn",
+          "localizedName": "SkillOutput\/localizedName",
+          "skill": "SkillOutput\/skill"
+        },
+        "@type": "SkillOutput",
+        "@id": "\/api\/.well-known\/genid\/39bbd073f4ce0dd0b9f3",
+        "codeId": "KS4408479KK2CRZ06GYC",
+        "nameDe": "SAP ABAP",
+        "nameEn": "SAP ABAP",
+        "localizedName": "SAP ABAP",
+        "skill": "\/api\/skills\/KS4408479KK2CRZ06GYC"
+      },
+      {
+        "@context": {
+          "@vocab": "https:\/\/www.freelancermap.at\/api\/docs.jsonld#",
+          "hydra": "http:\/\/www.w3.org\/ns\/hydra\/core#",
+          "codeId": "SkillOutput\/codeId",
+          "nameDe": "SkillOutput\/nameDe",
+          "nameEn": "SkillOutput\/nameEn",
+          "localizedName": "SkillOutput\/localizedName",
+          "skill": "SkillOutput\/skill"
+        },
+        "@type": "SkillOutput",
+        "@id": "\/api\/.well-known\/genid\/1c4356e55f008e7ccff6",
+        "codeId": "KS4408L61RHMD4XLWTM6",
+        "nameDe": "Sap Hana",
+        "nameEn": "SAP HANA",
+        "localizedName": "Sap Hana",
+        "skill": "\/api\/skills\/KS4408L61RHMD4XLWTM6"
+      },
+      {
+        "@context": {
+          "@vocab": "https:\/\/www.freelancermap.at\/api\/docs.jsonld#",
+          "hydra": "http:\/\/www.w3.org\/ns\/hydra\/core#",
+          "codeId": "SkillOutput\/codeId",
+          "nameDe": "SkillOutput\/nameDe",
+          "nameEn": "SkillOutput\/nameEn",
+          "localizedName": "SkillOutput\/localizedName",
+          "skill": "SkillOutput\/skill"
+        },
+        "@type": "SkillOutput",
+        "@id": "\/api\/.well-known\/genid\/c46830eb28ca8009d55d",
+        "codeId": "KS4408S6D0KM8CY45PHF",
+        "nameDe": "Sap MM",
+        "nameEn": "SAP Materials Management",
+        "localizedName": "Sap MM",
+        "skill": "\/api\/skills\/KS4408S6D0KM8CY45PHF"
+      },
+      {
+        "@context": {
+          "@vocab": "https:\/\/www.freelancermap.at\/api\/docs.jsonld#",
+          "hydra": "http:\/\/www.w3.org\/ns\/hydra\/core#",
+          "codeId": "SkillOutput\/codeId",
+          "nameDe": "SkillOutput\/nameDe",
+          "nameEn": "SkillOutput\/nameEn",
+          "localizedName": "SkillOutput\/localizedName",
+          "skill": "SkillOutput\/skill"
+        },
+        "@type": "SkillOutput",
+        "@id": "\/api\/.well-known\/genid\/8f63f77797e2357d5a3a",
+        "codeId": "KS440916HS07DG9CBFMT",
+        "nameDe": "Sap Ps",
+        "nameEn": "SAP Project System",
+        "localizedName": "Sap Ps",
+        "skill": "\/api\/skills\/KS440916HS07DG9CBFMT"
+      },
+      {
+        "@context": {
+          "@vocab": "https:\/\/www.freelancermap.at\/api\/docs.jsonld#",
+          "hydra": "http:\/\/www.w3.org\/ns\/hydra\/core#",
+          "codeId": "SkillOutput\/codeId",
+          "nameDe": "SkillOutput\/nameDe",
+          "nameEn": "SkillOutput\/nameEn",
+          "localizedName": "SkillOutput\/localizedName",
+          "skill": "SkillOutput\/skill"
+        },
+        "@type": "SkillOutput",
+        "@id": "\/api\/.well-known\/genid\/2e6d099174e499fea3df",
+        "codeId": "KS440C365HRHPM9VQDFF",
+        "nameDe": "Supply Chain Management",
+        "nameEn": "Supply Chain Management",
+        "localizedName": "Supply Chain Management",
+        "skill": "\/api\/skills\/KS440C365HRHPM9VQDFF"
+      },
+      {
+        "@context": {
+          "@vocab": "https:\/\/www.freelancermap.at\/api\/docs.jsonld#",
+          "hydra": "http:\/\/www.w3.org\/ns\/hydra\/core#",
+          "codeId": "SkillOutput\/codeId",
+          "nameDe": "SkillOutput\/nameDe",
+          "nameEn": "SkillOutput\/nameEn",
+          "localizedName": "SkillOutput\/localizedName",
+          "skill": "SkillOutput\/skill"
+        },
+        "@type": "SkillOutput",
+        "@id": "\/api\/.well-known\/genid\/ad92fbd054055667e6a6",
+        "codeId": "KSGRF2WKU0KFJIURCZ97",
+        "nameDe": "Beschaffung",
+        "nameEn": "Procurement",
+        "localizedName": "Beschaffung",
+        "skill": "\/api\/skills\/KSGRF2WKU0KFJIURCZ97"
+      }
+    ],
+    "disabled": []
+  },
+  "expires": "2026-09-09T15:08:42+02:00",
+  "disabled": false,
+  "budget": null,
+  "importer": null,
+  "locations": [
+    {
+      "@context": {
+        "@vocab": "https:\/\/www.freelancermap.at\/api\/docs.jsonld#",
+        "hydra": "http:\/\/www.w3.org\/ns\/hydra\/core#",
+        "geoname": "GeoNameOutput\/geoname",
+        "nameEn": "GeoNameOutput\/nameEn",
+        "nameDe": "GeoNameOutput\/nameDe",
+        "localizedName": "GeoNameOutput\/localizedName"
+      },
+      "@type": "GeoNameOutput",
+      "@id": "\/api\/.well-known\/genid\/72c7067cf53c40ee6ada",
+      "geoname": "\/api\/geo_names\/2761369",
+      "nameEn": "Vienna",
+      "nameDe": "Wien",
+      "localizedName": "Wien"
+    }
+  ],
+  "updateCount": 0,
+  "isEndcustomerProject": false,
+  "isArchived": false,
+  "applicationsPaused": false,
+  "customForm": [],
+  "companyUrl": "\/firma\/1005-optimus-search-gmbh-we-have-created-a-streamlined-service-that-has-allowed-us-to-deliver-short-term-subject-matter-experts-to-our-clients-meeting-time-and-business-critical-project-requirements-consistently-through-the-quick-acquisition-of-highly-skilled-professionals-in-e",
+  "id": 2976702,
+  "title": "Senior SAP MM Berater - 12 Monate - Wien (Hybrid)",
+  "slug": "senior-sap-mm-berater-12-monate-wien-hybrid-2976702",
+  "created": "2026-03-09T15:08:42+01:00",
+  "updated": "2026-03-09T15:08:42+01:00",
+  "poster": "\/api\/users\/421486",
+  "isTopProject": false,
+  "active": true,
+  "topProjectExpires": null,
+  "description": "\u003Cdiv class=\u0022ql-editor\u0022\u003E\u003Cdiv\u003E\u003Cspan style=\u0022background-color: rgb(255, 255, 255); color: rgb(36, 45, 46);\u0022\u003ESenior SAP MM Consultant (m\/w\/d) – Procurement \u0026amp; Supply Chain\u003C\/span\u003E\u003C\/div\u003E\u003Cdiv\u003E\u003Cbr\u003E\u003C\/div\u003E\u003Cdiv\u003E\u003Cspan style=\u0022background-color: rgb(255, 255, 255); color: rgb(36, 45, 46);\u0022\u003EProjektbeschreibung:\u003C\/span\u003E\u003C\/div\u003E\u003Cdiv\u003E\u003Cspan style=\u0022background-color: rgb(255, 255, 255); color: rgb(36, 45, 46);\u0022\u003EFür einen Kunden aus der Industrie- und Fertigungsbranche suchen wir einen erfahrenen Senior SAP MM Consultant (m\/w\/d) zur Unterstützung im Bereich Beschaffung und Supply Chain Prozesse innerhalb einer SAP S\/4HANA Systemlandschaft.\u003C\/span\u003E\u003C\/div\u003E\u003Cdiv\u003E\u003Cbr\u003E\u003C\/div\u003E\u003Cdiv\u003E\u003Cspan style=\u0022background-color: rgb(255, 255, 255); color: rgb(36, 45, 46);\u0022\u003EDer Fokus des Projekts liegt auf der Optimierung von Einkaufsprozessen, der Verbesserung der Lieferantenintegration sowie der Weiterentwicklung der Materialmanagementprozesse im SAP-System.\u003C\/span\u003E\u003C\/div\u003E\u003Cdiv\u003E\u003Cbr\u003E\u003C\/div\u003E\u003Cdiv\u003E\u003Cspan style=\u0022background-color: rgb(255, 255, 255); color: rgb(36, 45, 46);\u0022\u003EIhre Aufgaben:\u003C\/span\u003E\u003C\/div\u003E\u003Cdiv\u003E\u003Cspan style=\u0022background-color: rgb(255, 255, 255); color: rgb(36, 45, 46);\u0022\u003E• Unterstützung und Optimierung von Beschaffungsprozessen im SAP MM Umfeld\u003C\/span\u003E\u003C\/div\u003E\u003Cdiv\u003E\u003Cspan style=\u0022background-color: rgb(255, 255, 255); color: rgb(36, 45, 46);\u0022\u003E• Analyse und Verbesserung von Einkaufs- und Lieferantenprozessen\u003C\/span\u003E\u003C\/div\u003E\u003Cdiv\u003E\u003Cspan style=\u0022background-color: rgb(255, 255, 255); color: rgb(36, 45, 46);\u0022\u003E• Mitarbeit bei Integrationsthemen zwischen SAP MM und anderen Logistikmodulen\u003C\/span\u003E\u003C\/div\u003E\u003Cdiv\u003E\u003Cspan style=\u0022background-color: rgb(255, 255, 255); color: rgb(36, 45, 46);\u0022\u003E• Unterstützung der Fachbereiche bei Prozessdesign und Systemnutzung\u003C\/span\u003E\u003C\/div\u003E\u003Cdiv\u003E\u003Cspan style=\u0022background-color: rgb(255, 255, 255); color: rgb(36, 45, 46);\u0022\u003E• Durchführung von Workshops und Anforderungsanalysen mit Einkaufsteams\u003C\/span\u003E\u003C\/div\u003E\u003Cdiv\u003E\u003Cspan style=\u0022background-color: rgb(255, 255, 255); color: rgb(36, 45, 46);\u0022\u003E• Erstellung von fachlichen Konzepten und Dokumentationen\u003C\/span\u003E\u003C\/div\u003E\u003Cdiv\u003E\u003Cbr\u003E\u003C\/div\u003E\u003Cdiv\u003E\u003Cspan style=\u0022background-color: rgb(255, 255, 255); color: rgb(36, 45, 46);\u0022\u003EIhr Profil:\u003C\/span\u003E\u003C\/div\u003E\u003Cdiv\u003E\u003Cspan style=\u0022background-color: rgb(255, 255, 255); color: rgb(36, 45, 46);\u0022\u003E• Mehrjährige Erfahrung als SAP MM Consultant\u003C\/span\u003E\u003C\/div\u003E\u003Cdiv\u003E\u003Cspan style=\u0022background-color: rgb(255, 255, 255); color: rgb(36, 45, 46);\u0022\u003E• Fundiertes Verständnis von Beschaffungs- und Materialmanagementprozessen\u003C\/span\u003E\u003C\/div\u003E\u003Cdiv\u003E\u003Cspan style=\u0022background-color: rgb(255, 255, 255); color: rgb(36, 45, 46);\u0022\u003E• Erfahrung im SAP S\/4HANA Umfeld\u003C\/span\u003E\u003C\/div\u003E\u003Cdiv\u003E\u003Cspan style=\u0022background-color: rgb(255, 255, 255); color: rgb(36, 45, 46);\u0022\u003E• Kenntnisse in der Integration mit Modulen wie FI oder SD\u003C\/span\u003E\u003C\/div\u003E\u003Cdiv\u003E\u003Cspan style=\u0022background-color: rgb(255, 255, 255); color: rgb(36, 45, 46);\u0022\u003E• Analytische und strukturierte Arbeitsweise\u003C\/span\u003E\u003C\/div\u003E\u003Cdiv\u003E\u003Cspan style=\u0022background-color: rgb(255, 255, 255); color: rgb(36, 45, 46);\u0022\u003E• Sehr gute Deutschkenntnisse sowie gute Englischkenntnisse\u003C\/span\u003E\u003C\/div\u003E\u003Cdiv\u003E\u003Cbr\u003E\u003C\/div\u003E\u003Cdiv\u003E\u003Cspan style=\u0022background-color: rgb(255, 255, 255); color: rgb(36, 45, 46);\u0022\u003EEckdaten:\u003C\/span\u003E\u003C\/div\u003E\u003Cdiv\u003E\u003Cspan style=\u0022background-color: rgb(255, 255, 255); color: rgb(36, 45, 46);\u0022\u003E• Start: 19. März 2026\u003C\/span\u003E\u003C\/div\u003E\u003Cdiv\u003E\u003Cspan style=\u0022background-color: rgb(255, 255, 255); color: rgb(36, 45, 46);\u0022\u003E• Laufzeit: 12 Monate (Verlängerung möglich)\u003C\/span\u003E\u003C\/div\u003E\u003Cdiv\u003E\u003Cspan style=\u0022background-color: rgb(255, 255, 255); color: rgb(36, 45, 46);\u0022\u003E• Standort: Wien\u003C\/span\u003E\u003C\/div\u003E\u003Cdiv\u003E\u003Cspan style=\u0022background-color: rgb(255, 255, 255); color: rgb(36, 45, 46);\u0022\u003E• Arbeitsmodell: Hybrid\u003C\/span\u003E\u003C\/div\u003E\u003Cdiv\u003E\u003Cspan style=\u0022background-color: rgb(255, 255, 255); color: rgb(36, 45, 46);\u0022\u003E• Auslastung: Vollzeit\u003C\/span\u003E\u003C\/div\u003E\u003C\/div\u003E",
+  "displayDescription": "\u003Cdiv class=\u0022ql-editor\u0022\u003E\u003Cdiv\u003E\u003Cspan style=\u0022background-color: rgb(255, 255, 255); color: rgb(36, 45, 46);\u0022\u003ESenior SAP MM Consultant (m\/w\/d) – Procurement \u0026amp; Supply Chain\u003C\/span\u003E\u003C\/div\u003E\u003Cdiv\u003E\u003Cbr\u003E\u003C\/div\u003E\u003Cdiv\u003E\u003Cspan style=\u0022background-color: rgb(255, 255, 255); color: rgb(36, 45, 46);\u0022\u003EProjektbeschreibung:\u003C\/span\u003E\u003C\/div\u003E\u003Cdiv\u003E\u003Cspan style=\u0022background-color: rgb(255, 255, 255); color: rgb(36, 45, 46);\u0022\u003EFür einen Kunden aus der Industrie- und Fertigungsbranche suchen wir einen erfahrenen Senior SAP MM Consultant (m\/w\/d) zur Unterstützung im Bereich Beschaffung und Supply Chain Prozesse innerhalb einer SAP S\/4HANA Systemlandschaft.\u003C\/span\u003E\u003C\/div\u003E\u003Cdiv\u003E\u003Cbr\u003E\u003C\/div\u003E\u003Cdiv\u003E\u003Cspan style=\u0022background-color: rgb(255, 255, 255); color: rgb(36, 45, 46);\u0022\u003EDer Fokus des Projekts liegt auf der Optimierung von Einkaufsprozessen, der Verbesserung der Lieferantenintegration sowie der Weiterentwicklung der Materialmanagementprozesse im SAP-System.\u003C\/span\u003E\u003C\/div\u003E\u003Cdiv\u003E\u003Cbr\u003E\u003C\/div\u003E\u003Cdiv\u003E\u003Cspan style=\u0022background-color: rgb(255, 255, 255); color: rgb(36, 45, 46);\u0022\u003EIhre Aufgaben:\u003C\/span\u003E\u003C\/div\u003E\u003Cdiv\u003E\u003Cspan style=\u0022background-color: rgb(255, 255, 255); color: rgb(36, 45, 46);\u0022\u003E• Unterstützung und Optimierung von Beschaffungsprozessen im SAP MM Umfeld\u003C\/span\u003E\u003C\/div\u003E\u003Cdiv\u003E\u003Cspan style=\u0022background-color: rgb(255, 255, 255); color: rgb(36, 45, 46);\u0022\u003E• Analyse und Verbesserung von Einkaufs- und Lieferantenprozessen\u003C\/span\u003E\u003C\/div\u003E\u003Cdiv\u003E\u003Cspan style=\u0022background-color: rgb(255, 255, 255); color: rgb(36, 45, 46);\u0022\u003E• Mitarbeit bei Integrationsthemen zwischen SAP MM und anderen Logistikmodulen\u003C\/span\u003E\u003C\/div\u003E\u003Cdiv\u003E\u003Cspan style=\u0022background-color: rgb(255, 255, 255); color: rgb(36, 45, 46);\u0022\u003E• Unterstützung der Fachbereiche bei Prozessdesign und Systemnutzung\u003C\/span\u003E\u003C\/div\u003E\u003Cdiv\u003E\u003Cspan style=\u0022background-color: rgb(255, 255, 255); color: rgb(36, 45, 46);\u0022\u003E• Durchführung von Workshops und Anforderungsanalysen mit Einkaufsteams\u003C\/span\u003E\u003C\/div\u003E\u003Cdiv\u003E\u003Cspan style=\u0022background-color: rgb(255, 255, 255); color: rgb(36, 45, 46);\u0022\u003E• Erstellung von fachlichen Konzepten und Dokumentationen\u003C\/span\u003E\u003C\/div\u003E\u003Cdiv\u003E\u003Cbr\u003E\u003C\/div\u003E\u003Cdiv\u003E\u003Cspan style=\u0022background-color: rgb(255, 255, 255); color: rgb(36, 45, 46);\u0022\u003EIhr Profil:\u003C\/span\u003E\u003C\/div\u003E\u003Cdiv\u003E\u003Cspan style=\u0022background-color: rgb(255, 255, 255); color: rgb(36, 45, 46);\u0022\u003E• Mehrjährige Erfahrung als SAP MM Consultant\u003C\/span\u003E\u003C\/div\u003E\u003Cdiv\u003E\u003Cspan style=\u0022background-color: rgb(255, 255, 255); color: rgb(36, 45, 46);\u0022\u003E• Fundiertes Verständnis von Beschaffungs- und Materialmanagementprozessen\u003C\/span\u003E\u003C\/div\u003E\u003Cdiv\u003E\u003Cspan style=\u0022background-color: rgb(255, 255, 255); color: rgb(36, 45, 46);\u0022\u003E• Erfahrung im SAP S\/4HANA Umfeld\u003C\/span\u003E\u003C\/div\u003E\u003Cdiv\u003E\u003Cspan style=\u0022background-color: rgb(255, 255, 255); color: rgb(36, 45, 46);\u0022\u003E• Kenntnisse in der Integration mit Modulen wie FI oder SD\u003C\/span\u003E\u003C\/div\u003E\u003Cdiv\u003E\u003Cspan style=\u0022background-color: rgb(255, 255, 255); color: rgb(36, 45, 46);\u0022\u003E• Analytische und strukturierte Arbeitsweise\u003C\/span\u003E\u003C\/div\u003E\u003Cdiv\u003E\u003Cspan style=\u0022background-color: rgb(255, 255, 255); color: rgb(36, 45, 46);\u0022\u003E• Sehr gute Deutschkenntnisse sowie gute Englischkenntnisse\u003C\/span\u003E\u003C\/div\u003E\u003Cdiv\u003E\u003Cbr\u003E\u003C\/div\u003E\u003Cdiv\u003E\u003Cspan style=\u0022background-color: rgb(255, 255, 255); color: rgb(36, 45, 46);\u0022\u003EEckdaten:\u003C\/span\u003E\u003C\/div\u003E\u003Cdiv\u003E\u003Cspan style=\u0022background-color: rgb(255, 255, 255); color: rgb(36, 45, 46);\u0022\u003E• Start: 19. März 2026\u003C\/span\u003E\u003C\/div\u003E\u003Cdiv\u003E\u003Cspan style=\u0022background-color: rgb(255, 255, 255); color: rgb(36, 45, 46);\u0022\u003E• Laufzeit: 12 Monate (Verlängerung möglich)\u003C\/span\u003E\u003C\/div\u003E\u003Cdiv\u003E\u003Cspan style=\u0022background-color: rgb(255, 255, 255); color: rgb(36, 45, 46);\u0022\u003E• Standort: Wien\u003C\/span\u003E\u003C\/div\u003E\u003Cdiv\u003E\u003Cspan style=\u0022background-color: rgb(255, 255, 255); color: rgb(36, 45, 46);\u0022\u003E• Arbeitsmodell: Hybrid\u003C\/span\u003E\u003C\/div\u003E\u003Cdiv\u003E\u003Cspan style=\u0022background-color: rgb(255, 255, 255); color: rgb(36, 45, 46);\u0022\u003E• Auslastung: Vollzeit\u003C\/span\u003E\u003C\/div\u003E\u003C\/div\u003E",
+  "projectUrl": "https:\/\/www.freelancermap.at\/projekt\/senior-sap-mm-berater-12-monate-wien-hybrid-2976702"
+}

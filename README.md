@@ -1,21 +1,87 @@
-# Freelancermap Watcher
+# Freelancermap Watcher & MCP-Server
 
-A tool to monitor freelancermap for new projects matching specific technologies or locations, and send email notifications when new projects are found.
+Two tools in one:
 
-## Features
+1. **MCP Server** — Let AI assistants (Claude, Copilot, …) search [freelancermap.at](https://www.freelancermap.at) interactively.
+2. **Email Watcher** — A background process that polls for new projects and sends email notifications.
+
+---
+
+## MCP Server
+
+Expose freelancermap.at search as MCP tools so any compatible AI assistant can query it on demand — no config files required.
+
+### Tools
+
+- **`search_projects`** — Search for projects. Pass all desired terms (including synonyms) in the `terms` array; they are OR-combined into a single query. Supports remote/hybrid/on-site filter, DACH region, and city+radius.
+- **`get_project_detail`** — Fetch full details (description, skills, start date, duration, workload, budget) for a single project by its numeric ID.
+
+### Setup
+
+```bash
+npm install
+npm run build
+```
+
+#### Claude Code (user-wide)
+
+```bash
+claude mcp add --scope user --transport stdio freelancermap -- node /absolute/path/to/freelancermap-watcher/dist/freelancermap-mcp.js
+```
+
+#### Claude Desktop
+
+Edit `~/Library/Application Support/Claude/claude_desktop_config.json`:
+
+```json
+{
+  "mcpServers": {
+    "freelancermap": {
+      "command": "node",
+      "args": ["/absolute/path/to/freelancermap-watcher/dist/freelancermap-mcp.js"]
+    }
+  }
+}
+```
+
+Restart the app after saving.
+
+#### VS Code (GitHub Copilot)
+
+Create `.vscode/mcp.json` in your workspace:
+
+```json
+{
+  "servers": {
+    "freelancermap": {
+      "type": "stdio",
+      "command": "node",
+      "args": ["/absolute/path/to/freelancermap-watcher/dist/freelancermap-mcp.js"]
+    }
+  }
+}
+```
+
+---
+
+## Email Watcher
+
+A long-running Node.js/TypeScript process that polls the freelancermap.at API and sends email notifications for new projects.
+
+### Features
 
 - Monitor freelancermap for specific technologies (e.g., React, Node.js, Java, etc.)
 - Filter by location preferences (remote, hybrid, on-site)
 - Geographic filtering (DACH region or specific cities with radius)
 - Automatic email notifications for new projects
-- Configurable search intervals (default: every 5 minutes)
+- Configurable search intervals (default: every 10 minutes)
 
-## Requirements
+### Requirements
 
 - Node.js (see .nvmrc for specific version)
 - Gmail account with OAuth 2.0 credentials
 
-## Installation
+### Installation
 
 1. Clone this repository
 2. Install dependencies:
@@ -31,9 +97,9 @@ A tool to monitor freelancermap for new projects matching specific technologies 
    cp fetchers-sample.json fetchers.json
    ```
 
-## Configuration
+### Configuration
 
-### Gmail OAuth 2.0 Setup
+#### Gmail OAuth 2.0 Setup
 
 1. Create a Google Cloud project
 2. Enable the Gmail API
@@ -51,7 +117,7 @@ GMAIL_OAUTH_REFRESH_TOKEN=your-oauth-refresh-token
 RECIPIENT_EMAIL=recipient@example.com
 ```
 
-### Configuring Fetchers
+#### Configuring Fetchers
 
 Create / edit `fetchers.json` to set up your search criteria. Each entry represents a different search:
 
@@ -60,11 +126,11 @@ Create / edit `fetchers.json` to set up your search criteria. Each entry represe
   "name": "Search Name",
   "query": "search terms OR 'phrase search'",
   "location": {
-    "remote": true|false,
-    "hybrid": true|false,
-    "onSite": true|false
+    "remote": true,
+    "hybrid": false,
+    "onSite": false
   },
-  "dach": true|false,
+  "dach": true,
   "city": {
     "name": "City Name",
     "radius": "distance-in-km"
@@ -78,11 +144,9 @@ Parameters:
 - `query`: Search terms (supports OR operator and quoted phrases)
 - `location`: Filter for remote work, hybrid, or on-site positions
 - `dach`: Limit to Germany (DE), Austria (AT), and Switzerland (CH)
-- `city`: Optional - specify a city name and search radius in kilometers
+- `city`: Optional — specify a city name and search radius in kilometers
 
-## Usage
-
-Start the application:
+### Usage
 
 ```
 npm start
@@ -92,14 +156,14 @@ The application will:
 
 1. Send a test email to verify email configuration
 2. Start fetching projects according to your configuration
-3. Monitor for new projects every 5 minutes
+3. Monitor for new projects every 10 minutes
 4. Send email notifications when new projects are found
 
-## Building for Production
+---
 
-Compile the TypeScript code:
+## Building
 
-```
+```bash
 npm run build
 ```
 

@@ -119,6 +119,42 @@ export interface Project {
   skills: Skill[]
 }
 
+export interface ProjectDetail {
+  id: number
+  slug: string
+  title: string
+  company: string
+  city: string
+  country: Country
+  description: string
+  displayDescription: string
+  projectUrl: string
+  created: string
+  updated: string
+  expires: string
+  contractType: {
+    contractType: string
+    remoteInPercent: number
+  }
+  startYear: number | null
+  startMonth: number | null
+  startText: string | null
+  durationInMonths: number | null
+  durationText: string | null
+  extensionPossible: boolean
+  workload: number | null
+  budget: any | null
+  skills: {
+    enabled: Array<{ nameEn: string; nameDe: string; localizedName: string }>
+    disabled: Array<{ nameEn: string; nameDe: string; localizedName: string }>
+  }
+  locations: Array<{ nameEn: string; nameDe: string; localizedName: string }>
+  isEndcustomerProject: boolean
+  isArchived: boolean
+  applicationsPaused: boolean
+  disabled: boolean
+}
+
 export interface FreelancerMapResponse {
   projects: Project[]
   // Add other potential top-level fields from the response if known
