@@ -25,13 +25,23 @@ npm run build
 
 #### Claude Code (user-wide)
 
+**macOS / Linux:**
 ```bash
 claude mcp add --scope user --transport stdio freelancermap -- node /absolute/path/to/freelancermap-watcher/dist/freelancermap-mcp.js
 ```
 
+**Windows:**
+```cmd
+claude mcp add --scope user --transport stdio freelancermap -- node C:\absolute\path\to\freelancermap-watcher\dist\freelancermap-mcp.js
+```
+
 #### Claude Desktop
 
-Edit `~/Library/Application Support/Claude/claude_desktop_config.json`:
+Edit the config file for your OS:
+
+- **macOS:** `~/Library/Application Support/Claude/claude_desktop_config.json`
+- **Windows:** `%APPDATA%\Claude\claude_desktop_config.json`
+- **Linux:** `~/.config/Claude/claude_desktop_config.json`
 
 ```json
 {
@@ -44,15 +54,20 @@ Edit `~/Library/Application Support/Claude/claude_desktop_config.json`:
 }
 ```
 
+On Windows, use a Windows-style path in `args`: `"C:\\absolute\\path\\to\\freelancermap-watcher\\dist\\freelancermap-mcp.js"`
+
 Restart the app after saving.
 
-#### VS Code (GitHub Copilot)
+#### GitHub Copilot CLI
 
-Create `.vscode/mcp.json` in your workspace:
+Edit the config file for your OS:
+
+- **macOS / Linux:** `~/.copilot/mcp-config.json`
+- **Windows:** `%USERPROFILE%\.copilot\mcp-config.json`
 
 ```json
 {
-  "servers": {
+  "mcpServers": {
     "freelancermap": {
       "type": "stdio",
       "command": "node",
@@ -61,6 +76,10 @@ Create `.vscode/mcp.json` in your workspace:
   }
 }
 ```
+
+On Windows, use a Windows-style path in `args`: `"C:\\absolute\\path\\to\\freelancermap-watcher\\dist\\freelancermap-mcp.js"`
+
+Alternatively, run `/mcp add` interactively within Copilot CLI and choose `stdio`.
 
 ---
 
